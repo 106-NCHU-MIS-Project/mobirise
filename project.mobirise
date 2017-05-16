@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page1.html",
+    "currentPage": "page5.html",
     "name": "My Site",
     "theme": {
       "name": "mobirise3",
@@ -118,12 +118,12 @@
               "link": "index.html",
               "size": 0,
               "active": true,
-              "color": "#d14841",
+              "color": "#000000",
               "newWindow": false
             }
           },
           "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>領養捷徑</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(226, 80, 65);\"></span>領養捷徑</a></li>"
         },
         {
           "_tags": [
@@ -665,11 +665,12 @@
               "link": "index.html",
               "size": 0,
               "active": true,
-              "newWindow": false
+              "newWindow": false,
+              "color": "#000000"
             }
           },
           "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>領養捷徑</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(226, 80, 65);\"></span>領養捷徑</a></li>"
         },
         {
           "_tags": [
@@ -909,10 +910,10 @@
               "color": "#000000"
             },
             ".link": {
-              "font-size": "0.75rem"
+              "font-size": "0.85rem"
             },
             ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.812rem"
+              "font-size": "0.921rem"
             },
             ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
               "color": "@primaryColor"
@@ -944,7 +945,7 @@
             "Theme"
           ],
           "_name": "menu",
-          "_anchor": "menu-x",
+          "_anchor": "menu-2k",
           "_params": {
             "bgColor": "#efefef",
             "fontSize": "0.85",
@@ -968,16 +969,17 @@
             "iconFont": {
               "class": "mbr-iconfont mbr-iconfont-menu",
               "linkInNewWindow": false,
-              "name": "mobirise",
+              "name": "smile-face",
               "family": "MobiriseIcons",
               "link": "index.html",
               "size": 0,
-              "newWindow": false,
-              "active": true
+              "active": true,
+              "color": "#000000",
+              "newWindow": false
             }
           },
           "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>領養捷徑</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(226, 80, 65);\"></span>領養捷徑</a></li>"
         },
         {
           "_tags": [
@@ -1004,7 +1006,7 @@
             "showText": true,
             "showButtons": false
           },
-          "title": "HEALTH",
+          "title": "HEALTH\u001b",
           "text": "Click any text to edit or style it. Click blue \"Gear\" icon in the top right corner to hide/show buttons, text, title and change the block background. <br> Click red \"+\" in the bottom right corner to add a new block. Use the top left menu to create new pages, sites and add extensions.",
           "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">DOWNLOAD FOR MAC</a>"
         },
@@ -1214,10 +1216,10 @@
               "color": "#000000"
             },
             ".link": {
-              "font-size": "0.75rem"
+              "font-size": "0.85rem"
             },
             ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.812rem"
+              "font-size": "0.921rem"
             },
             ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
               "color": "@primaryColor"
@@ -1278,11 +1280,12 @@
               "link": "index.html",
               "size": 0,
               "active": true,
-              "newWindow": false
+              "newWindow": false,
+              "color": "#000000"
             }
           },
           "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>領養捷徑</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(226, 80, 65);\"></span>領養捷徑</a></li>"
         },
         {
           "_tags": [
@@ -1527,10 +1530,10 @@
               "color": "#000000"
             },
             ".link": {
-              "font-size": "0.75rem"
+              "font-size": "0.85rem"
             },
             ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.812rem"
+              "font-size": "0.921rem"
             },
             ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
               "color": "@primaryColor"
@@ -1591,11 +1594,12 @@
               "link": "index.html",
               "size": 0,
               "active": true,
-              "newWindow": false
+              "newWindow": false,
+              "color": "#000000"
             }
           },
           "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>領養捷徑</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(226, 80, 65);\"></span>領養捷徑</a></li>"
         },
         {
           "_tags": [
@@ -1832,10 +1836,10 @@
               "color": "#000000"
             },
             ".link": {
-              "font-size": "0.75rem"
+              "font-size": "0.85rem"
             },
             ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.812rem"
+              "font-size": "0.921rem"
             },
             ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
               "color": "@primaryColor"
@@ -1896,11 +1900,12 @@
               "link": "index.html",
               "size": 0,
               "newWindow": false,
-              "active": true
+              "active": true,
+              "color": "#b8312f"
             }
           },
           "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>領養捷徑</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(226, 80, 65);\"></span>領養捷徑</a></li>"
         },
         {
           "_tags": [
@@ -1926,11 +1931,11 @@
           "_inherit": "header1",
           "_styles": {
             ".mbr-section-title": {
-              "color": "#000",
+              "color": "#ffffff",
               "text-align": "left"
             },
             ".mbr-section-lead": {
-              "color": "#7c706b"
+              "color": "#ffffff"
             }
           },
           "_tags": [
@@ -1950,7 +1955,7 @@
             },
             "bgVideoRadio": false,
             "overlay": true,
-            "overlayOpacity": "0.5",
+            "overlayOpacity": "0.2",
             "overlayColor": "#ffffff",
             "contentAlign": "left",
             "showTitle": true,
@@ -2210,10 +2215,10 @@
               "color": "#000000"
             },
             ".link": {
-              "font-size": "0.75rem"
+              "font-size": "0.85rem"
             },
             ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.812rem"
+              "font-size": "0.921rem"
             },
             ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
               "color": "@primaryColor"
@@ -2272,14 +2277,14 @@
               "name": "smile-face",
               "family": "MobiriseIcons",
               "link": "index.html",
-              "size": 0,
+              "size": "",
               "active": true,
-              "color": "#d14841",
+              "color": "#000000",
               "newWindow": false
             }
           },
           "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>領養捷徑</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(226, 80, 65);\"></span>領養捷徑</a></li>"
         },
         {
           "_styles": {
@@ -2411,10 +2416,10 @@
               "color": "#000000"
             },
             ".link": {
-              "font-size": "0.75rem"
+              "font-size": "0.85rem"
             },
             ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.812rem"
+              "font-size": "0.921rem"
             },
             ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
               "color": "@primaryColor"
@@ -2475,12 +2480,12 @@
               "link": "index.html",
               "size": 0,
               "active": true,
-              "color": "#d14841",
+              "color": "#000000",
               "newWindow": false
             }
           },
           "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>領養捷徑</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(226, 80, 65);\"></span>領養捷徑</a></li>"
         },
         {
           "_styles": {
@@ -2612,10 +2617,10 @@
               "color": "#000000"
             },
             ".link": {
-              "font-size": "0.75rem"
+              "font-size": "0.85rem"
             },
             ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.812rem"
+              "font-size": "0.921rem"
             },
             ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
               "color": "@primaryColor"
@@ -2676,12 +2681,12 @@
               "link": "index.html",
               "size": 0,
               "active": true,
-              "color": "#d14841",
+              "color": "#000000",
               "newWindow": false
             }
           },
           "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>領養捷徑</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(226, 80, 65);\"></span>領養捷徑</a></li>"
         },
         {
           "_styles": {
@@ -2813,10 +2818,10 @@
               "color": "#000000"
             },
             ".link": {
-              "font-size": "0.75rem"
+              "font-size": "0.85rem"
             },
             ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.812rem"
+              "font-size": "0.921rem"
             },
             ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
               "color": "@primaryColor"
@@ -2877,12 +2882,12 @@
               "link": "index.html",
               "size": 0,
               "active": true,
-              "color": "#d14841",
+              "color": "#000000",
               "newWindow": false
             }
           },
           "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>領養捷徑</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(226, 80, 65);\"></span>領養捷徑</a></li>"
         },
         {
           "_styles": {
@@ -3031,10 +3036,10 @@
               "color": "#000000"
             },
             ".link": {
-              "font-size": "0.75rem"
+              "font-size": "0.85rem"
             },
             ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.812rem"
+              "font-size": "0.921rem"
             },
             ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
               "color": "@primaryColor"
@@ -3095,12 +3100,12 @@
               "link": "index.html",
               "size": 0,
               "active": true,
-              "color": "#d14841",
+              "color": "#000000",
               "newWindow": false
             }
           },
           "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>領養捷徑</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(226, 80, 65);\"></span>領養捷徑</a></li>"
         },
         {
           "_styles": {
