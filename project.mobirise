@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page1.html",
+    "currentPage": "page5.html",
     "name": "My Site",
     "theme": {
       "name": "mobirise3",
@@ -3211,7 +3211,8 @@
               "family": "MobiriseIcons",
               "link": "",
               "size": 250,
-              "active": true
+              "active": true,
+              "color": "#000000"
             }
           },
           "title": "INTRO WITH YOUTUBE VIDEO",
@@ -3265,7 +3266,8 @@
               "family": "MobiriseIcons",
               "link": "",
               "size": 250,
-              "active": true
+              "active": true,
+              "color": "#000000"
             }
           },
           "title": "INTRO WITH YOUTUBE VIDEO",
@@ -3319,7 +3321,8 @@
               "family": "MobiriseIcons",
               "link": "",
               "size": 250,
-              "active": true
+              "active": true,
+              "color": "#000000"
             }
           },
           "title": "INTRO WITH YOUTUBE VIDEO",
@@ -3373,7 +3376,8 @@
               "family": "MobiriseIcons",
               "link": "",
               "size": 250,
-              "active": true
+              "active": true,
+              "color": "#000000"
             }
           },
           "title": "INTRO WITH YOUTUBE VIDEO",
