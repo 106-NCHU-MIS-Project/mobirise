@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "artical.html",
+    "currentPage": "page5.html",
     "name": "My Site",
     "theme": {
       "name": "mobirise3",
@@ -2197,7 +2197,7 @@
               "active": true
             }
           },
-          "title": "準備好了嗎",
+          "title": "開始",
           "text": "Full screen intro with parallax image background and color overlay and a picture on right.",
           "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"#\" data-toolbar=\"-mbrBtnMove\">尋找</a>",
           "_styles": {
