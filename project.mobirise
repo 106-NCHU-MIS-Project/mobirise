@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page5.html",
+    "currentPage": "page1.html",
     "name": "My Site",
     "theme": {
       "name": "mobirise3",
@@ -2004,7 +2004,6 @@
           },
           "media": {
             "image": {
-              "active": true,
               "width": 1400,
               "src": "@THEME_PATH@/components/_images/gallery/coworkers.jpg"
             },
@@ -2016,8 +2015,13 @@
             },
             "iconFont": {
               "class": "mbr-iconfont mbr-iconfont-header2",
+              "linkInNewWindow": false,
+              "name": "new-file",
+              "family": "MobiriseIcons",
               "link": "",
-              "size": 250
+              "size": 250,
+              "active": true,
+              "color": "#000000"
             }
           },
           "title": "體型",
@@ -2054,7 +2058,7 @@
             "overlay": true,
             "overlayOpacity": 0.3,
             "overlayColor": "#000",
-            "inverse": false,
+            "inverse": true,
             "showTitle": true,
             "showText": true,
             "showButtons": true,
@@ -2062,7 +2066,6 @@
           },
           "media": {
             "image": {
-              "active": true,
               "width": 1400,
               "src": "@THEME_PATH@/components/_images/gallery/coworkers.jpg"
             },
@@ -2074,8 +2077,13 @@
             },
             "iconFont": {
               "class": "mbr-iconfont mbr-iconfont-header2",
+              "linkInNewWindow": false,
+              "name": "file",
+              "family": "MobiriseIcons",
               "link": "",
-              "size": 250
+              "size": 250,
+              "active": true,
+              "color": "#000000"
             }
           },
           "title": "毛色",
@@ -2118,7 +2126,6 @@
           },
           "media": {
             "image": {
-              "active": true,
               "width": 1400,
               "src": "@THEME_PATH@/components/_images/gallery/coworkers.jpg"
             },
@@ -2130,8 +2137,13 @@
             },
             "iconFont": {
               "class": "mbr-iconfont mbr-iconfont-header2",
+              "linkInNewWindow": false,
+              "name": "edit",
+              "family": "MobiriseIcons",
               "link": "",
-              "size": 250
+              "size": 250,
+              "active": true,
+              "color": "#000000"
             }
           },
           "title": "年紀",
@@ -2187,7 +2199,12 @@
           },
           "title": "準備好了嗎",
           "text": "Full screen intro with parallax image background and color overlay and a picture on right.",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"#\" data-toolbar=\"-mbrBtnMove\">尋找</a>"
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"#\" data-toolbar=\"-mbrBtnMove\">尋找</a>",
+          "_styles": {
+            ".btn": {
+              "font-size": "16px"
+            }
+          }
         }
       ]
     },
@@ -3394,8 +3411,7 @@
           "media": {
             "image": {
               "width": 1400,
-              "src": "@THEME_PATH@/components/_images/gallery/desktop.jpg",
-              "active": true
+              "src": "@THEME_PATH@/components/_images/gallery/desktop.jpg"
             },
             "video": {
               "src": "https://www.youtube.com/embed/Tq7p44IA-1U",

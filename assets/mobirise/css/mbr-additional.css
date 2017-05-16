@@ -865,6 +865,9 @@ h6,
 #header2-1x .mbr-section-text {
   color: #000000;
 }
+#header2-1t .btn {
+  font-size: 16px;
+}
 #menu-20 .hide-buttons .nav-btn {
   display: none !important;
 }
