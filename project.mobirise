@@ -22,7 +22,7 @@
       }
     },
     "versionFirst": "3.12.1",
-    "uniqCompNum": 129,
+    "uniqCompNum": 140,
     "versionPublish": "3.12.1"
   },
   "pages": {
@@ -420,6 +420,11 @@
             "Theme"
           ],
           "_name": "features2",
+          "_styles": {
+            ".striped .mbr-cards-col:nth-child(2n+1)": {
+              "background-color": "#5c5c5c"
+            }
+          },
           "_anchor": "features2-2o",
           "_params": {
             "columnsColor": "#5c5c5c",
@@ -531,12 +536,7 @@
           "title6": "Host Anywhere",
           "subtitle6": "Don't limit yourself to just one platform",
           "caption6": "Publish your website to a local drive, FTP or host on Amazon S3, Google Drive, Github. Don't limit yourself to just one platform or service provider.",
-          "button6": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">MORE</a>",
-          "_styles": {
-            ".striped .mbr-cards-col:nth-child(2n+1)": {
-              "background-color": "#5c5c5c"
-            }
-          }
+          "button6": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">MORE</a>"
         },
         {
           "_tags": [
@@ -840,7 +840,7 @@
             "Theme"
           ],
           "_name": "msg-box3",
-          "_anchor": "msg-box3-2q",
+          "_anchor": "msg-box3-3o",
           "_params": {
             "paddingTop": "1",
             "paddingBottom": "1",
@@ -862,7 +862,7 @@
           },
           "title": "MODERN STYLES",
           "text": "<p>Mobirise has provided for website developers a growing library of modern blocks which can be used either partially or in full for every website developed through the builder.</p>",
-          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"index.html\" data-toolbar=\"-mbrBtnMove\">我準備好了</a>"
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"index.html#header3-1z\" data-toolbar=\"-mbrBtnMove\">我準備好了</a>"
         },
         {
           "_tags": [
@@ -1140,13 +1140,16 @@
           "_styles": {
             ".mbr-section-title, p": {
               "color": "#000"
+            },
+            ".btn": {
+              "font-size": "12px"
             }
           },
           "_tags": [
             "Theme"
           ],
           "_name": "msg-box3",
-          "_anchor": "msg-box3-2r",
+          "_anchor": "msg-box3-3p",
           "_params": {
             "paddingTop": "1",
             "paddingBottom": "1",
@@ -1168,7 +1171,7 @@
           },
           "title": "MODERN STYLES",
           "text": "<p>Mobirise has provided for website developers a growing library of modern blocks which can be used either partially or in full for every website developed through the builder.</p>",
-          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"index.html\" data-toolbar=\"-mbrBtnMove\">我準備好了</a>"
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"index.html#header3-1z\" data-toolbar=\"-mbrBtnMove\">我準備好了</a>"
         },
         {
           "_tags": [
@@ -1454,13 +1457,16 @@
           "_styles": {
             ".mbr-section-title, p": {
               "color": "#000"
+            },
+            ".btn": {
+              "font-size": "12px"
             }
           },
           "_tags": [
             "Theme"
           ],
           "_name": "msg-box3",
-          "_anchor": "msg-box3-2s",
+          "_anchor": "msg-box3-3q",
           "_params": {
             "paddingTop": "1",
             "paddingBottom": "1",
@@ -1482,7 +1488,7 @@
           },
           "title": "MODERN STYLES",
           "text": "<p>Mobirise has provided for website developers a growing library of modern blocks which can be used either partially or in full for every website developed through the builder.</p>",
-          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"index.html\" data-toolbar=\"-mbrBtnMove\">我準備好了</a>"
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"index.html#header3-1z\" data-toolbar=\"-mbrBtnMove\">我準備好了</a>"
         },
         {
           "_tags": [
@@ -1760,13 +1766,16 @@
           "_styles": {
             ".mbr-section-title, p": {
               "color": "#000"
+            },
+            ".btn": {
+              "font-size": "12px"
             }
           },
           "_tags": [
             "Theme"
           ],
           "_name": "msg-box3",
-          "_anchor": "msg-box3-2t",
+          "_anchor": "msg-box3-3r",
           "_params": {
             "paddingTop": "1",
             "paddingBottom": "1",
@@ -1788,7 +1797,7 @@
           },
           "title": "MODERN STYLES",
           "text": "<p>Mobirise has provided for website developers a growing library of modern blocks which can be used either partially or in full for every website developed through the builder.</p>",
-          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"index.html\" data-toolbar=\"-mbrBtnMove\">我準備好了</a>"
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"index.html#header3-1z\" data-toolbar=\"-mbrBtnMove\">我準備好了</a>"
         },
         {
           "_tags": [
@@ -1901,7 +1910,7 @@
               "size": 0,
               "newWindow": false,
               "active": true,
-              "color": "#b8312f"
+              "color": "#000000"
             }
           },
           "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
@@ -2155,6 +2164,11 @@
             "Theme"
           ],
           "_name": "header2",
+          "_styles": {
+            ".btn": {
+              "font-size": "16px"
+            }
+          },
           "_anchor": "header2-1t",
           "_params": {
             "imageSize": 50,
@@ -2199,12 +2213,7 @@
           },
           "title": "開始",
           "text": "Full screen intro with parallax image background and color overlay and a picture on right.",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"#\" data-toolbar=\"-mbrBtnMove\">尋找</a>",
-          "_styles": {
-            ".btn": {
-              "font-size": "16px"
-            }
-          }
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"result.html\" data-toolbar=\"-mbrBtnMove\">尋找</a>"
         }
       ]
     },
@@ -3463,6 +3472,288 @@
           "title": "MODERN STYLES",
           "text": "<p>Mobirise has provided for website developers a growing library of modern blocks which can be used either partially or in full for every website developed through the builder.</p>",
           "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"index.html\" data-toolbar=\"-mbrBtnMove\">回首頁</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "footer1",
+          "_anchor": "footer1-2b",
+          "_params": {
+            "paddingTop": "1",
+            "paddingBottom": "1",
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#323232",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright (c) 2017 NCHU-MIS."
+        }
+      ]
+    },
+    "result.html": {
+      "settings": {
+        "title": "Web Site Creator Title",
+        "meta_descr": "Web Site Creator Description"
+      },
+      "components": [
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.85rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.921rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#d6d6d6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#e7e7e7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#efefef"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-3l",
+          "_params": {
+            "bgColor": "#efefef",
+            "fontSize": "0.85",
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": true,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": false
+          },
+          "logo": {
+            "image": {
+              "src": "@THEME_PATH@/components/_images/logo.png",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "linkInNewWindow": false,
+              "name": "smile-face",
+              "family": "MobiriseIcons",
+              "link": "index.html",
+              "size": 0,
+              "active": true,
+              "color": "#000000",
+              "newWindow": false
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-black\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">流浪GO(狗)back home</a>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html\">首頁</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"artical.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">最新資訊</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"artical.html\">文章列表</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#header3-1z\">照顧資訊</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"page9.html\">關於我們</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black-outline btn-black\" href=\"index.html#header1-1y\"><span class=\"mbri-hearth mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(226, 80, 65);\"></span>領養捷徑</a></li>"
+        },
+        {
+          "_styles": {
+            ".mbr-section-title, p": {
+              "color": "#fff"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "msg-box8",
+          "_anchor": "msg-box8-3s",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "parallax": true,
+            "bgImageRadio": true,
+            "bgImage": "@THEME_PATH@/components/_images/desert.jpg",
+            "bgColor": "#F2F2F2",
+            "bgColorRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showText": true,
+            "showButton": false
+          },
+          "title": "結果",
+          "text": "<p>Article header with background image and parallax effect.</p>",
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">SEE ALL TEMPLATES</a>"
+        },
+        {
+          "_inherit": "gallery1",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "gallery4",
+          "_params": {
+            "paddingTop": "1",
+            "paddingBottom": "1",
+            "images": [
+              {
+                "tags": "Awesome",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@THEME_PATH@/components/_images/gallery/bike-small.jpg",
+                "image": "@THEME_PATH@/components/_images/gallery/bike.jpg",
+                "caption": "Type caption here",
+                "active": true
+              },
+              {
+                "tags": "Responsive",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@THEME_PATH@/components/_images/gallery/code-man-small.jpg",
+                "image": "@THEME_PATH@/components/_images/gallery/code-man.jpg",
+                "caption": "Type caption here"
+              },
+              {
+                "tags": "Creative",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@THEME_PATH@/components/_images/gallery/coworkers-small.jpg",
+                "image": "@THEME_PATH@/components/_images/gallery/coworkers.jpg",
+                "caption": "Type caption here"
+              },
+              {
+                "tags": "Animated",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@THEME_PATH@/components/_images/gallery/desktop-small.jpg",
+                "image": "@THEME_PATH@/components/_images/gallery/desktop.jpg",
+                "caption": "Type caption here"
+              },
+              {
+                "tags": "Awesome",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@THEME_PATH@/components/_images/gallery/room-laptop-small.jpg",
+                "image": "@THEME_PATH@/components/_images/gallery/room-laptop.jpg",
+                "caption": "Type caption here"
+              },
+              {
+                "tags": "Beautiful",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@THEME_PATH@/components/_images/gallery/table-small.jpg",
+                "image": "@THEME_PATH@/components/_images/gallery/table.jpg",
+                "caption": "Type caption here"
+              },
+              {
+                "tags": "Responsive",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@THEME_PATH@/components/_images/gallery/windows-books-small.jpg",
+                "image": "@THEME_PATH@/components/_images/gallery/windows-books.jpg",
+                "caption": "Type caption here"
+              },
+              {
+                "tags": "Animated",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@THEME_PATH@/components/_images/gallery/working-area-small.jpg",
+                "image": "@THEME_PATH@/components/_images/gallery/working-area.jpg",
+                "caption": "Type caption here"
+              }
+            ],
+            "spacing": 1,
+            "showText": true,
+            "filter": true,
+            "bgColor": "fff",
+            "filterBgColor": false,
+            "fullWidth": true,
+            "showBullets": true
+          },
+          "_anchor": "gallery4-3t",
+          "articleLayout": false,
+          "allItem": "All"
+        },
+        {
+          "_inherit": "msg-box8",
+          "_styles": {
+            ".mbr-section-title, p": {
+              "color": "#000"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "msg-box3",
+          "_anchor": "msg-box3-3u",
+          "_params": {
+            "paddingTop": "1",
+            "paddingBottom": "1",
+            "parallax": true,
+            "bgImageRadio": false,
+            "bgImage": "@THEME_PATH@/components/_images/desert.jpg",
+            "bgColor": "#ffffff",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": false,
+            "showText": false,
+            "showButton": true
+          },
+          "title": "MODERN STYLES",
+          "text": "<p>Mobirise has provided for website developers a growing library of modern blocks which can be used either partially or in full for every website developed through the builder.</p>",
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"index.html\" data-toolbar=\"-mbrBtnMove\">回首頁<br></a>"
         },
         {
           "_tags": [
