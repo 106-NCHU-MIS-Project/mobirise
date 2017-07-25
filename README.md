@@ -1,3 +1,1 @@
 # mobirise
-GitHub Pages
-Test  
