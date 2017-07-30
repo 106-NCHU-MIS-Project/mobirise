@@ -14,12 +14,12 @@
   - 有 Youtube Channel 放置很多關於寵物的影片，舉凡寵物用品、照顧小知識等。**[傳送門](https://www.youtube.com/channel/UCWAT8Xvol1FeHeqUHFNMHtQ)**
   - **重要** - [動物雲寵物誌](http://petwalk.animalcloud.com.tw/index)：包含許多資訊，文章、領養、協尋。
 ![](https://i.imgur.com/AdOy4g5.jpg)  
-<br>
+
 * [毛起來MaoUP](http://maoup.com.tw/)
   - 與動物雲同樣為寵物社群
   - 與動物雲相比，其文章普遍搭配可愛的插圖，對於毛爸毛媽甚至是尚未飼養寵物的讀者來說，會更加 **親切、易懂**。  
 ![](http://maoup.com.tw/wp-content/uploads/2017/05/170315_2.png)
-<br>
+
 * [遛遛](http://liuliu.co/)
   - 相較於前兩者，著重在飼主之間的互動，偏向交友平台
 * [QME寵物協尋](http://qmemore.com/index.php)
