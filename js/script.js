@@ -12,7 +12,3 @@ xhr.onreadystatechange = function(){
     // $('.ininin').text(data[0].animal_kind);
   }
 }
-
-function hello(data){
-  console.log(data);
-}
