@@ -47,11 +47,25 @@
       if (this.readyState === 4 && this.status === 200){
         var data = JSON.parse(this.responseText);
         // console.log(data);
+        var res_str = "";
         $.each(data, function(index,obj){
-          $('body').text(obj.animal_kind+obj.animal_sex);
+          // $('body').text(obj.animal_kind+obj.animal_sex);
+          res_str += '<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Awesome" data-video-url="false">';
+          res_str += '<div href="#lb-gallery4-3t" data-slide-to="'+index+'" data-toggle="modal">';
+          res_str += '<img alt="" src="'+obj.album_file+'">';
+          res_str += '<span class="icon-focus"></span>';
+          res_str += '<span class="mbr-gallery-title">Type caption here</span></div></div>';
         });
+
+        $('#result_table').html(res_str);
+
       }
     }
+var foot = "";
+foot += '<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2b" style="background-color: rgb(50, 50, 50); padding-top: 0.875rem; padding-bottom: 0.875rem;">';
+foot += '<div class="container">';
+foot += '<p class="text-xs-center">Copyright (c) 2017 NCHU-MIS.</p></div></footer>';
+        $('body').append(foot);
   </script>
 
 
@@ -118,88 +132,9 @@
     <div class="mbr-gallery-row container">
         <div class=" mbr-gallery-layout-default">
             <div>
-                <div>
-                    <div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Awesome" data-video-url="false">
-                        <div href="#lb-gallery4-3t" data-slide-to="0" data-toggle="modal">
+                <div id="result_table">
 
 
-
-                            <img alt="" src="assets/images/bike-small.jpg">
-
-                            <span class="icon-focus"></span>
-                            <span class="mbr-gallery-title">Type caption here</span>
-                        </div>
-                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Responsive" data-video-url="false">
-                        <div href="#lb-gallery4-3t" data-slide-to="1" data-toggle="modal">
-
-
-
-                            <img alt="" src="assets/images/code-man-small.jpg">
-
-                            <span class="icon-focus"></span>
-                            <span class="mbr-gallery-title">Type caption here</span>
-                        </div>
-                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Creative" data-video-url="false">
-                        <div href="#lb-gallery4-3t" data-slide-to="2" data-toggle="modal">
-
-
-
-                            <img alt="" src="assets/images/coworkers-small.jpg">
-
-                            <span class="icon-focus"></span>
-                            <span class="mbr-gallery-title">Type caption here</span>
-                        </div>
-                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Animated" data-video-url="false">
-                        <div href="#lb-gallery4-3t" data-slide-to="3" data-toggle="modal">
-
-
-
-                            <img alt="" src="assets/images/desktop-small.jpg">
-
-                            <span class="icon-focus"></span>
-                            <span class="mbr-gallery-title">Type caption here</span>
-                        </div>
-                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Awesome" data-video-url="false">
-                        <div href="#lb-gallery4-3t" data-slide-to="4" data-toggle="modal">
-
-
-
-                            <img alt="" src="assets/images/room-laptop-small.jpg">
-
-                            <span class="icon-focus"></span>
-                            <span class="mbr-gallery-title">Type caption here</span>
-                        </div>
-                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Beautiful" data-video-url="false">
-                        <div href="#lb-gallery4-3t" data-slide-to="5" data-toggle="modal">
-
-
-
-                            <img alt="" src="assets/images/table-small.jpg">
-
-                            <span class="icon-focus"></span>
-                            <span class="mbr-gallery-title">Type caption here</span>
-                        </div>
-                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Responsive" data-video-url="false">
-                        <div href="#lb-gallery4-3t" data-slide-to="6" data-toggle="modal">
-
-
-
-                            <img alt="" src="assets/images/windows-books-small.jpg">
-
-                            <span class="icon-focus"></span>
-                            <span class="mbr-gallery-title">Type caption here</span>
-                        </div>
-                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Animated" data-video-url="false">
-                        <div href="#lb-gallery4-3t" data-slide-to="7" data-toggle="modal">
-
-
-
-                            <img alt="" src="assets/images/working-area-small.jpg">
-
-                            <span class="icon-focus"></span>
-                            <span class="mbr-gallery-title">Type caption here</span>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -267,12 +202,7 @@
 
 </section>
 
-<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2b" style="background-color: rgb(50, 50, 50); padding-top: 0.875rem; padding-bottom: 0.875rem;">
 
-    <div class="container">
-        <p class="text-xs-center">Copyright (c) 2017 NCHU-MIS.</p>
-    </div>
-</footer>
 
 
   <script src="assets/tether/tether.min.js"></script>
