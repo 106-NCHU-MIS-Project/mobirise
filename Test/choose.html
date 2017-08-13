@@ -33,7 +33,7 @@
         var data = JSON.parse(this.responseText);
         // console.log(data);
         $.each(data, function(index,obj){
-          $('body').text(obj.animal_kind+obj.animal_sex);
+          $('body').append(obj.animal_kind+obj.animal_sex);
         });
       }
     }
