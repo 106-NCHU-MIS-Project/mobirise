@@ -23,6 +23,35 @@
   <link rel="stylesheet" href="assets/mobirise-gallery/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+    });
+
+    var result = {};
+    (function () {
+        var paras = window.location.search.substring(1);
+        paras.split("&").forEach(function(part) {
+          var item = part.split("=");
+          result[item[0]] = decodeURIComponent(item[1]);
+        });
+    })();
+    console.log(result);
+    var APIURL = 'https://raw.githubusercontent.com/106-NCHU-MIS-Project/mobirise/gh-pages/json/top100_'+result.animal_kind+'.json';
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", APIURL, true);
+    // xhr.setRequestHeader();
+    xhr.send();
+    xhr.onreadystatechange = function(){
+      if (this.readyState === 4 && this.status === 200){
+        var data = JSON.parse(this.responseText);
+        // console.log(data);
+        $.each(data, function(index,obj){
+          $('body').text(obj.animal_kind+obj.animal_sex);
+        });
+      }
+    }
+  </script>
 
 
 </head>
