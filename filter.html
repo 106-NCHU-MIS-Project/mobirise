@@ -68,9 +68,9 @@
             <div class="row">
                 <div class="mbr-section col-md-10">
 
-                    <h1 class="mbr-section-title display-1">貓 or 狗</h1>
+                    <h1 class="mbr-section-title display-1">貓or狗</h1>
                     <p class="mbr-section-lead lead">Full screen intro with color background.<br>Buttons, text and title are aligned to the left.</p>
-                    <div class="mbr-section-btn"><a class="btn btn-lg btn-primary" href="https://mobirise.com">貓</a> <a class="btn btn-lg btn-primary" href="https://mobirise.com">狗</a></div>
+                    <div class="mbr-section-btn"><a class="btn btn-lg btn-primary" onclick="javascript:cat();" id="cat">貓</a> <a class="btn btn-lg btn-primary" onclick="javascript:dog();" id="dog">狗</a></div>
                 </div>
             </div>
         </div>
@@ -92,6 +92,8 @@
                     <div class="mbr-table-md-up">
 
 
+
+
                         <div class="mbr-table-cell col-md-5 content-size text-xs-center text-md-right">
 
                             <h3 class="mbr-section-title display-2">體型</h3>
@@ -100,7 +102,7 @@
                                 <p>Full screen intro with parallax image background and color overlay and a picture on right.</p>
                             </div>
 
-                            <div class="mbr-section-btn"><a class="btn btn-primary" href="https://mobirise.com">皆可</a> <a class="btn btn-primary" href="https://mobirise.com">小型</a> <a class="btn btn-primary" href="https://mobirise.com">中型</a> <a class="btn btn-primary" href="https://mobirise.com">大型</a> </div>
+                            <div class="mbr-section-btn"><a class="btn btn-primary" onclick="javascript:size_all();" id="size_all">皆可</a> <a class="btn btn-primary" onclick="javascript:size_small();" id="size_small">小型</a> <a class="btn btn-primary" onclick="javascript:size_medium();" id="size_medium">中型</a> <a class="btn btn-primary" onclick="javascript:size_large();" id="size_large">大型</a> </div>
 
                         </div>
                         <div class="mbr-table-cell mbr-valign-top mbr-left-padding-md-up col-md-7 image-size" style="width: 50%;">
@@ -140,7 +142,7 @@
                                 <p>Full screen intro with parallax image background and color overlay and a picture on right.</p>
                             </div>
 
-                            <div class="mbr-section-btn"><a class="btn btn-primary" href="https://mobirise.com">白</a> <a class="btn btn-primary" href="https://mobirise.com">黃</a> <a class="btn btn-primary" href="https://mobirise.com">黑</a> <a class="btn btn-primary" href="https://mobirise.com">皆可</a> </div>
+                            <div class="mbr-section-btn"><a class="btn btn-primary" onclick="javascript:white();" id="white">白</a> <a class="btn btn-primary" onclick="javascript:yellow();" id="yellow">黃</a> <a class="btn btn-primary" onclick="javascript:black();" id="black">黑</a> <a class="btn btn-primary" onclick="javascript:color_all();" id="color_all">皆可</a> </div>
 
                         </div>
 
@@ -180,7 +182,7 @@
                                 <p>Full screen intro with parallax image background and color overlay and a picture on right.</p>
                             </div>
 
-                            <div class="mbr-section-btn"><a class="btn btn-primary" href="https://mobirise.com">幼年</a> <a class="btn btn-primary" href="https://mobirise.com">成年</a></div>
+                            <div class="mbr-section-btn"><a class="btn btn-primary" onclick="javascript:baby();" id="baby">幼年</a> <a class="btn btn-primary" onclick="javascript:adult();" id="adult">成年</a></div>
 
                         </div>
                         <div class="mbr-table-cell mbr-valign-top mbr-left-padding-md-up col-md-7 image-size" style="width: 50%;">
@@ -221,12 +223,105 @@
                                 <p>Full screen intro with parallax image background and color overlay and a picture on right.</p>
                             </div>
 
-                            <div class="mbr-section-btn"><a class="btn btn-primary" href="result.html">尋找</a></div>
+                            <div class="mbr-section-btn"><a class="btn btn-primary"  onclick="javascript:send()">尋找</a></div>
 
                         </div>
 
+<form class="form1" id="form1" name="foerm1" action="result.html" method="get">
+  <input type="hidden" id="hidden1" name="pet" value="">
+  <input type="hidden" id="hidden2" name="size" value="">
+  <input type="hidden" id="hidden3" name="hair" value="">
+  <input type="hidden" id="hidden4" name="age" value="">
+</form>
 
+<script type="text/javascript">   ///按鈕 表單送出
+  function send(){
+    document.getElementById('form1').submit();
+  }
+  function cat(){
+    document.getElementById('hidden1').value="cat";
+    document.getElementById('dog').style="";
+    document.getElementById('cat').style="border:2px red solid;";
+  }
+  function dog(){
+    document.getElementById('hidden1').value="dog";
+    document.getElementById('dog').style="border:2px red solid;";
+    document.getElementById('cat').style="";
+  }
+  function size_all(){
+    document.getElementById('hidden2').value="all";
+    document.getElementById('size_large').style="";
+    document.getElementById('size_medium').style="";
+    document.getElementById('size_all').style="border:2px red solid;";
+    document.getElementById('size_small').style="";
+  }
+  function size_small(){
+    document.getElementById('hidden2').value="small";
+    document.getElementById('size_large').style="";
+    document.getElementById('size_medium').style="";
+    document.getElementById('size_all').style="";
+    document.getElementById('size_small').style="border:2px red solid;";
+  }
+  function size_medium(){
+    document.getElementById('hidden2').value="medium";
+    document.getElementById('size_large').style="";
+    document.getElementById('size_medium').style="border:2px red solid;";
+    document.getElementById('size_all').style="";
+    document.getElementById('size_small').style="";
+  }
+  function size_large(){
+    document.getElementById('hidden2').value="large";
+    document.getElementById('size_large').style="border:2px red solid;";
+    document.getElementById('size_medium').style="";
+    document.getElementById('size_all').style="";
+    document.getElementById('size_small').style="";
 
+  }
+  function white(){
+    document.getElementById('hidden3').value="white";
+    document.getElementById('white').style="border:2px red solid;";
+    document.getElementById('black').style="";
+    document.getElementById('yellow').style="";
+    document.getElementById('color_all').style="";
+
+  }
+  function yellow(){
+    document.getElementById('hidden3').value="yellow";
+    document.getElementById('yellow').style="border:2px red solid;";
+    document.getElementById('black').style="";
+    document.getElementById('white').style="";
+    document.getElementById('color_all').style="";
+
+  }
+  function black(){
+    document.getElementById('hidden3').value="black";
+    document.getElementById('black').style="border:2px red solid;";
+    document.getElementById('white').style="";
+    document.getElementById('yellow').style="";
+    document.getElementById('color_all').style="";
+
+  }
+  function color_all(){
+    document.getElementById('hidden3').value="all";
+    document.getElementById('color_all').style="border:2px red solid;";
+    document.getElementById('black').style="";
+    document.getElementById('yellow').style="";
+    document.getElementById('white').style="";
+
+  }
+  function adult(){
+    document.getElementById('hidden4').value="adult";
+    document.getElementById('adult').style="border:2px red solid;";
+    document.getElementById('baby').style="";
+
+  }
+  function baby(){
+    document.getElementById('hidden4').value="baby";
+    document.getElementById('baby').style="border:2px red solid;";
+    document.getElementById('adult').style="";
+
+  }
+</script>
 
                     </div>
                 </div>
