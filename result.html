@@ -29,43 +29,46 @@
 
     });
 
-    var result = {};
-    (function () {
-        var paras = window.location.search.substring(1);
-        paras.split("&").forEach(function(part) {
-          var item = part.split("=");
-          result[item[0]] = decodeURIComponent(item[1]);
-        });
-    })();
-    console.log(result);
-    var APIURL = 'https://raw.githubusercontent.com/106-NCHU-MIS-Project/mobirise/gh-pages/json/top100_'+result.animal_kind+'.json';
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", APIURL, true);
-    // xhr.setRequestHeader();
-    xhr.send();
-    xhr.onreadystatechange = function(){
-      if (this.readyState === 4 && this.status === 200){
-        var data = JSON.parse(this.responseText);
-        // console.log(data);
-        var res_str = "";
-        $.each(data, function(index,obj){
-          // $('body').text(obj.animal_kind+obj.animal_sex);
-          res_str += '<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Awesome" data-video-url="false">';
-          res_str += '<div href="#lb-gallery4-3t" data-slide-to="'+index+'" data-toggle="modal">';
-          res_str += '<img alt="" src="'+obj.album_file+'">';
-          res_str += '<span class="icon-focus"></span>';
-          res_str += '<span class="mbr-gallery-title">Type caption here</span></div></div>';
-        });
-
-        $('#result_table').html(res_str);
-
-      }
-    }
-var foot = "";
-foot += '<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2b" style="background-color: rgb(50, 50, 50); padding-top: 0.875rem; padding-bottom: 0.875rem;">';
-foot += '<div class="container">';
-foot += '<p class="text-xs-center">Copyright (c) 2017 NCHU-MIS.</p></div></footer>';
-        $('body').append(foot);
+    // var result = {};
+    // (function () {
+    //     var paras = window.location.search.substring(1);
+    //     paras.split("&").forEach(function(part) {
+    //       var item = part.split("=");
+    //       result[item[0]] = decodeURIComponent(item[1]);
+    //     });
+    // })();
+    // console.log(result);
+    // var APIURL = 'https://raw.githubusercontent.com/106-NCHU-MIS-Project/mobirise/gh-pages/json/top100_'+result.animal_kind+'.json';
+    // var xhr = new XMLHttpRequest();
+    // xhr.open("GET", APIURL, true);
+    // // xhr.setRequestHeader();
+    // xhr.send();
+    // xhr.onreadystatechange = function(){
+    //   if (this.readyState === 4 && this.status === 200){
+    //     var data = JSON.parse(this.responseText);
+    //     // console.log(data);
+    //     var res_str = "";
+    //     $.each(data, function(index,obj){
+    //       // $('body').text(obj.animal_kind+obj.animal_sex);
+    //       res_str += '<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="'+obj.animal_kind+'" data-video-url="false">';
+    //       res_str += '<div href="#lb-gallery4-3t" data-slide-to="'+index+'" data-toggle="modal">';
+    //       res_str += '<img alt="" src="'+obj.album_file+'">';
+    //       res_str += '<span class="icon-focus"></span>';
+    //       res_str += '<span class="mbr-gallery-title">Type caption here</span></div></div>';
+    //     });
+    //
+    //     res_str += '<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2b" style="background-color: rgb(50, 50, 50); padding-top: 0.875rem; padding-bottom: 0.875rem;">';
+    //     res_str += '<div class="container">';
+    //     res_str += '<p class="text-xs-center">Copyright (c) 2017 NCHU-MIS.</p></div></footer>';
+    //     $('#result_table').html(res_str);
+    //
+    //   }
+    // }
+// var foot = "";
+// foot += '<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2b" style="background-color: rgb(50, 50, 50); padding-top: 0.875rem; padding-bottom: 0.875rem;">';
+// foot += '<div class="container">';
+// foot += '<p class="text-xs-center">Copyright (c) 2017 NCHU-MIS.</p></div></footer>';
+// $('#result_table').append(foot).html();
   </script>
 
 
@@ -187,20 +190,18 @@ foot += '<p class="text-xs-center">Copyright (c) 2017 NCHU-MIS.</p></div></foote
     </div>
 </section>
 
-<section class="mbr-section article" id="msg-box3-3u" style="background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 40px;">
-
+<!-- <section class="mbr-section article" id="msg-box3-3u" style="background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 40px;">
 
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-xs-center">
-
 
                 <div><a class="btn btn-secondary" href="index.html">回首頁<br></a></div>
             </div>
         </div>
     </div>
 
-</section>
+</section> -->
 
 
 
@@ -221,5 +222,52 @@ foot += '<p class="text-xs-center">Copyright (c) 2017 NCHU-MIS.</p></div></foote
 
 
   <input name="animation" type="hidden">
+
+    <script type="text/javascript">
+          var result = {};
+          (function () {
+              var paras = window.location.search.substring(1);
+              paras.split("&").forEach(function(part) {
+                var item = part.split("=");
+                result[item[0]] = decodeURIComponent(item[1]);
+              });
+          })();
+          console.log(result);
+          var APIURL = 'https://raw.githubusercontent.com/106-NCHU-MIS-Project/mobirise/gh-pages/json/top20_'+result.animal_kind+'.json';
+          var xhr = new XMLHttpRequest();
+          xhr.open("GET", APIURL, true);
+          // xhr.setRequestHeader();
+          xhr.send();
+          xhr.onreadystatechange = function(){
+            if (this.readyState === 4 && this.status === 200){
+              var data = JSON.parse(this.responseText);
+              // console.log(data);
+              var res_str = "";
+              $.each(data, function(index,obj){
+                // $('body').text(obj.animal_kind+obj.animal_sex);
+                res_str += '<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="'+obj.animal_kind+'" data-video-url="false">';
+                res_str += '<div href="#lb-gallery4-3t" data-slide-to="'+index+'" data-toggle="modal">';
+                res_str += '<img alt="" src="'+obj.album_file+'">';
+                res_str += '<span class="icon-focus"></span>';
+                res_str += '<span class="mbr-gallery-title">Type caption here</span></div></div>';
+              });
+
+              res_str += '<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2b" style="background-color: rgb(50, 50, 50); padding-top: 0.875rem; padding-bottom: 0.875rem;">';
+              res_str += '<div class="container">';
+              res_str += '<p class="text-xs-center">Copyright (c) 2017 NCHU-MIS.</p></div></footer>';
+              var home_btn = "";
+              home_btn += '<section class="mbr-section article" id="msg-box3-3u" style="background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 40px;">';
+              home_btn += '<div class="container">';
+              home_btn += '<div class="row">';
+              home_btn += '<div class="col-md-8 col-md-offset-2 text-xs-center">';
+              home_btn += '<div><a class="btn btn-secondary" href="index.html">回首頁<br></a></div></div></div></div></section>';
+              res_str += home_btn;
+              $('#result_table').html(res_str);
+
+            }
+          }
+    </script>
+
+
   </body>
 </html>
