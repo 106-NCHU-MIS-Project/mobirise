@@ -245,16 +245,30 @@
               var res_str = "";
               $.each(data, function(index,obj){
                 // $('body').text(obj.animal_kind+obj.animal_sex);
-                res_str += '<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="'+obj.animal_kind+'" data-video-url="false">';
+                res_str += '<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Awesome" data-video-url="false">';
                 res_str += '<div href="#lb-gallery4-3t" data-slide-to="'+index+'" data-toggle="modal">';
-                res_str += '<img alt="" src="'+obj.album_file+'">';
+                res_str += '<img alt="" width=180px height=180px src="'+obj.album_file+'">';
                 res_str += '<span class="icon-focus"></span>';
-                res_str += '<span class="mbr-gallery-title">Type caption here</span></div></div>';
+                if (obj.animal_foundplace.length > 3)
+                {
+                  var tmp = '';
+                  obj.animal_foundplace = obj.animal_foundplace.split("", 3);
+                  $.each(obj.animal_foundplace, function(index_obj, comb){
+                    if (obj.animal_foundplace[2] != '市' || obj.animal_foundplace[2] != '區' || obj.animal_foundplace[2] != '鎮' || obj.animal_foundplace[2] != '鄉') {
+                      tmp = '台灣的某地';
+                      return;
+                    }
+                    else {
+                      tmp += obj.animal_foundplace[index_obj];
+                      obj.animal_foundplace = tmp;
+                    }
+                  });
+                }
+                if (obj.animal_foundplace == "")
+                  obj.animal_foundplace = '台灣的某地';
+                res_str += '<span class="mbr-gallery-title">'+obj.animal_kind+obj.animal_kind+'Found@'+obj.animal_foundplace+'</span></div></div>';
               });
 
-              res_str += '<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2b" style="background-color: rgb(50, 50, 50); padding-top: 0.875rem; padding-bottom: 0.875rem;">';
-              res_str += '<div class="container">';
-              res_str += '<p class="text-xs-center">Copyright (c) 2017 NCHU-MIS.</p></div></footer>';
               var home_btn = "";
               home_btn += '<section class="mbr-section article" id="msg-box3-3u" style="background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 40px;">';
               home_btn += '<div class="container">';
@@ -262,6 +276,9 @@
               home_btn += '<div class="col-md-8 col-md-offset-2 text-xs-center">';
               home_btn += '<div><a class="btn btn-secondary" href="index.html">回首頁<br></a></div></div></div></div></section>';
               res_str += home_btn;
+              res_str += '<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2b" style="background-color: rgb(50, 50, 50); padding-top: 0.875rem; padding-bottom: 0.875rem;">';
+              res_str += '<div class="container">';
+              res_str += '<p class="text-xs-center">Copyright (c) 2017 NCHU-MIS.</p></div></footer>';
               $('#result_table').html(res_str);
 
             }
