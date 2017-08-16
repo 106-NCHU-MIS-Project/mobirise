@@ -249,20 +249,29 @@
                 res_str += '<div href="#lb-gallery4-3t" data-slide-to="'+index+'" data-toggle="modal">';
                 res_str += '<img alt="" width=180px height=180px src="'+obj.album_file+'">';
                 res_str += '<span class="icon-focus"></span>';
-                if (obj.animal_foundplace.length > 3)
+
+                if (obj.animal_foundplace.length > 4)
                 {
                   var tmp = '';
                   obj.animal_foundplace = obj.animal_foundplace.split("", 3);
-                  $.each(obj.animal_foundplace, function(index_obj, comb){
-                    if (obj.animal_foundplace[2] != '市' || obj.animal_foundplace[2] != '區' || obj.animal_foundplace[2] != '鎮' || obj.animal_foundplace[2] != '鄉') {
-                      tmp = '台灣的某地';
-                      return;
+                  if (obj.animal_foundplace[2] == '市' || obj.animal_foundplace[2] == '區' || obj.animal_foundplace[2] == '鎮' || obj.animal_foundplace[2] == '鄉')
+                  {
+                    for (var i = 0; i < obj.animal_foundplace.length; i++) {
+                      tmp += obj.animal_foundplace[i];
                     }
-                    else {
-                      tmp += obj.animal_foundplace[index_obj];
-                      obj.animal_foundplace = tmp;
-                    }
-                  });
+                    obj.animal_foundplace = tmp;
+                  }
+                  else 
+                  {
+                      obj.animal_foundplace = '台灣的某地';
+                  }
+                }
+                else if (obj.animal_foundplace.length > 0 && obj.animal_foundplace.length < 4) {
+                  var tmp = "";
+                  for (var i = 0; i < obj.animal_foundplace.length; i++) {
+                    tmp += obj.animal_foundplace[i];
+                  }
+                  obj.animal_foundplace = tmp;
                 }
                 if (obj.animal_foundplace == "")
                   obj.animal_foundplace = '台灣的某地';
