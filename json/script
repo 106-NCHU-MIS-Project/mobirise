@@ -1,5 +1,5 @@
 #!/bin/bash
 
 curl 'http://data.coa.gov.tw/Service/OpenData/AnimalOpenData.aspx?$top=100' > top100.json
-curl 'http://data.coa.gov.tw/Service/OpenData/AnimalOpenData.aspx?$top=100&$filter=animal_kind+like+狗' > top100_dog.json
-curl 'http://data.coa.gov.tw/Service/OpenData/AnimalOpenData.aspx?$top=100&$filter=animal_kind+like+貓' > top100_cat.json
+curl 'http://data.coa.gov.tw/Service/OpenData/AnimalOpenData.aspx?$top=100&$filter=animal_kind+like+狗' > top100_狗.json
+curl 'http://data.coa.gov.tw/Service/OpenData/AnimalOpenData.aspx?$top=100&$filter=animal_kind+like+貓' > top100_貓.json
