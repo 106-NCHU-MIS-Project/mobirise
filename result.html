@@ -225,6 +225,10 @@
 
     <script type="text/javascript">
           var result = {};
+          function imgError(index){
+              $('#res_'+index).hide();
+
+          }
           (function () {
               var paras = window.location.search.substring(1);
               paras.split("&").forEach(function(part) {
@@ -232,7 +236,7 @@
                 result[item[0]] = decodeURIComponent(item[1]);
               });
           })();
-          console.log(result);
+
           var APIURL = 'https://raw.githubusercontent.com/106-NCHU-MIS-Project/mobirise/gh-pages/json/top20_'+result.animal_kind+'.json';
           var xhr = new XMLHttpRequest();
           xhr.open("GET", APIURL, true);
@@ -245,16 +249,15 @@
               var res_str = "";
               $.each(data, function(index,obj){
                 // $('body').text(obj.animal_kind+obj.animal_sex);
-                res_str += '<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Awesome" data-video-url="false">';
+                res_str += '<div id="res_'+index+'" class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Awesome" data-video-url="false">';
                 res_str += '<div href="#lb-gallery4-3t" data-slide-to="'+index+'" data-toggle="modal">';
-                res_str += '<img alt="" width=180px height=180px src="'+obj.album_file+'">';
+                res_str += '<img alt="" width=180px height=180px src="'+obj.album_file+'" onerror="imgError('+index+');">';
                 res_str += '<span class="icon-focus"></span>';
-
                 if (obj.animal_foundplace.length > 4)
                 {
                   var tmp = '';
                   obj.animal_foundplace = obj.animal_foundplace.split("", 3);
-                  if (obj.animal_foundplace[2] == '市' || obj.animal_foundplace[2] == '區' || obj.animal_foundplace[2] == '鎮' || obj.animal_foundplace[2] == '鄉')
+                  if (obj.animal_foundplace[2] == '市' || obj.animal_foundplace[2] == '區' || obj.animal_foundplace[2] == '鎮' || obj.animal_foundplace[2] == '鄉' || obj.animal_foundplace[3] == '之')
                   {
                     for (var i = 0; i < obj.animal_foundplace.length; i++) {
                       tmp += obj.animal_foundplace[i];
@@ -275,7 +278,7 @@
                 }
                 if (obj.animal_foundplace == "")
                   obj.animal_foundplace = '台灣的某地';
-                res_str += '<span class="mbr-gallery-title">'+obj.animal_kind+obj.animal_kind+'Found@'+obj.animal_foundplace+'</span></div></div>';
+                res_str += '<span class="mbr-gallery-title" >'+obj.animal_kind+obj.animal_kind+'Found@'+obj.animal_foundplace+'</span></div></div>';
               });
 
               var home_btn = "";
