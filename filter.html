@@ -15,13 +15,28 @@
   <link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
+
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/animate.css/animate.min.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/sweetalert-master/dist/sweetalert.css">
+
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-
-
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/sweetalert-master/dist/sweetalert.min.js" charset="utf-8"></script>
+<style media="screen">
+  h2{
+    visibility: visible!important;
+  }
+  button{
+    visibility: visible!important;
+  }
+  html,body{
+    overflow-y: auto!important;
+  }
+</style>
 
 </head>
 <body>
@@ -241,7 +256,9 @@
   <input type="hidden" id="hidden3" name="animal_colour" value="">
   <input type="hidden" id="hidden4" name="animal_age" value="">
 </form>
+<script type="text/javascript">
 
+</script>
 <script type="text/javascript">   ///按鈕 表單送出
 
 var animal_kind = 0;
@@ -251,7 +268,7 @@ var animal_age = 0;
 
 
   function check(){       //////表單檢查
-    var temp="表單尚未完成唷>>>>>";
+    var temp="";
     if(animal_kind+animal_bodytype+animal_colour+animal_age==4)
     {
       return true; //////////皆選擇 return true
@@ -269,8 +286,9 @@ var animal_age = 0;
       if(animal_age==0){
         temp+="(寵物年紀)";
       }
-
-      alert(temp);
+      $(document).ready(function(){
+      swal("表單尚未完成唷",temp);
+      });
       return false;   //////////else return false
     }
 
