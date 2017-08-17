@@ -243,20 +243,61 @@
 </form>
 
 <script type="text/javascript">   ///按鈕 表單送出
-  function send(){
-    document.getElementById('form1').submit();
+
+var animal_kind = 0;
+var animal_bodytype = 0;
+var animal_colour = 0;
+var animal_age = 0;
+
+
+  function check(){       //////表單檢查
+    var temp="表單尚未完成唷>>>>>";
+    if(animal_kind+animal_bodytype+animal_colour+animal_age==4)
+    {
+      return true; //////////皆選擇 return true
+    }
+    else{
+      if(animal_kind==0){
+        temp=temp+"(寵物類別) ";
+      }
+      if(animal_bodytype==0){
+        temp+="(寵物體型) ";
+      }
+      if(animal_colour==0){
+        temp+="(寵物毛色) ";
+      }
+      if(animal_age==0){
+        temp+="(寵物年紀)";
+      }
+
+      alert(temp);
+      return false;   //////////else return false
+    }
+
   }
+
+  function send(){
+    if(check()){
+    document.getElementById('form1').submit();
+    }
+  }
+
+  //////////////////////////////////
   function cat(){
+    animal_kind=1;
     document.getElementById('hidden1').value="貓";
     document.getElementById('dog').style="";
     document.getElementById('cat').style="border:2px red solid;";
   }
   function dog(){
+    animal_kind=1;
     document.getElementById('hidden1').value="狗";
     document.getElementById('dog').style="border:2px red solid;";
     document.getElementById('cat').style="";
   }
+  //////////////////////////////////////
   function size_all(){
+    animal_bodytype=1;
     document.getElementById('hidden2').value=null;
     document.getElementById('size_big').style="";
     document.getElementById('size_medium').style="";
@@ -266,6 +307,7 @@
 
   }
   function size_mini(){
+    animal_bodytype=1;
     document.getElementById('hidden2').value="MINI";
     document.getElementById('size_big').style="";
     document.getElementById('size_medium').style="";
@@ -275,6 +317,7 @@
   }
 
   function size_small(){
+    animal_bodytype=1;
     document.getElementById('hidden2').value="SMALL";
     document.getElementById('size_big').style="";
     document.getElementById('size_medium').style="";
@@ -283,6 +326,7 @@
     document.getElementById('size_small').style="border:2px red solid;";
   }
   function size_medium(){
+        animal_bodytype=1;
     document.getElementById('hidden2').value="MEDIUM";
     document.getElementById('size_big').style="";
     document.getElementById('size_mini').style="";
@@ -291,6 +335,7 @@
     document.getElementById('size_small').style="";
   }
   function size_big(){
+        animal_bodytype=1;
     document.getElementById('hidden2').value="BIG";
     document.getElementById('size_big').style="border:2px red solid;";
     document.getElementById('size_medium').style="";
@@ -298,7 +343,9 @@
     document.getElementById('size_small').style="";
     document.getElementById('size_mini').style="";
   }
+  //////////////////////////////////////////
   function white(){
+    animal_colour=1;
     document.getElementById('hidden3').value="白色";
     document.getElementById('white').style="border:2px red solid;";
     document.getElementById('black').style="";
@@ -310,6 +357,7 @@
 
   }
   function black(){
+    animal_colour=1;
     document.getElementById('hidden3').value="黑色";
     document.getElementById('black').style="border:2px red solid;";
     document.getElementById('white').style="";
@@ -321,6 +369,8 @@
   }
 
   function brown(){
+    animal_colour=1;
+
     document.getElementById('hidden3').value="棕色";
     document.getElementById('brown').style="border:2px red solid;";
     document.getElementById('white').style="";
@@ -332,6 +382,8 @@
 
   }
   function yellow(){
+    animal_colour=1;
+
     document.getElementById('hidden3').value="黃色";
     document.getElementById('yellow').style="border:2px red solid;";
     document.getElementById('black').style="";
@@ -342,6 +394,8 @@
     document.getElementById('color_all').style="";
   }
   function tiger(){
+    animal_colour=1;
+
     document.getElementById('hidden3').value="虎斑";
     document.getElementById('tiger').style="border:2px red solid;";
     document.getElementById('white').style="";
@@ -352,6 +406,8 @@
     document.getElementById('color_all').style="";
   }
   function mix(){
+    animal_colour=1;
+
     document.getElementById('hidden3').value="花色";
     document.getElementById('mix').style="border:2px red solid;";
     document.getElementById('white').style="";
@@ -362,6 +418,8 @@
     document.getElementById('color_all').style="";
   }
   function color_all(){
+    animal_colour=1;
+
     document.getElementById('hidden3').value=null;
     document.getElementById('color_all').style="border:2px red solid;";
     document.getElementById('black').style="";
@@ -371,25 +429,32 @@
     document.getElementById('tiger').style="";
     document.getElementById('mix').style="";
   }
+  ///////////////////////////////////////////////
   function adult(){
+    animal_age=1;
     document.getElementById('hidden4').value="ADULT";
     document.getElementById('adult').style="border:2px red solid;";
     document.getElementById('child').style="";
     document.getElementById('age_all').style="";
   }
   function child(){
+    animal_age=1;
+
     document.getElementById('hidden4').value="CHILD";
     document.getElementById('child').style="border:2px red solid;";
     document.getElementById('adult').style="";
     document.getElementById('age_all').style="";
   }
   function age_all(){
+    animal_age=1;
+
     document.getElementById('hidden4').value=null;
     document.getElementById('age_all').style="border:2px red solid;";
     document.getElementById('adult').style="";
     document.getElementById('child').style="";
 
   }
+  ///////////////////////////////////////////
 </script>
 
                     </div>
