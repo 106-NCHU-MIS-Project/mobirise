@@ -234,8 +234,10 @@
 
     <script type="text/javascript">
           var result = {};
+          var img_err = 0;
           function imgError(index){
               $('#res_'+index).hide();
+              img_err++;
 
           }
           (function () {
@@ -376,6 +378,7 @@
 
               // console.log(data);
               var res_str = "";
+              var res_count = 0;
               var ci_content = "";
               $.each(data, function(index,obj){
                 if (result.animal_bodytype == '') {
@@ -427,6 +430,8 @@
                 if (obj.animal_foundplace == "")
                   obj.animal_foundplace = '台灣的某地';
                 res_str += '<span class="mbr-gallery-title" >'+obj.animal_kind+obj.animal_kind+'Found@'+obj.animal_foundplace+'</span></div></div>';
+                res_count++;
+                // alert(res_count);
                 // if (ci_content =="")
                 // ci_content += '<div class="carousel-item active">';
                 // else
@@ -435,8 +440,57 @@
                 // ci_content += '<div style="margin:30%"><img alt="" width=180px height=180px src="'+obj.album_file+'";"></div></div>';
                 // ci_content +=  '<img alt="" width=180px height=180px src="'+obj.album_file+'";"></div>';
 
-                
               });
+
+              if (res_count == 0) {
+                  swal('目前沒有符合條件的浪浪', '何不看看我們為您精心挑選的浪浪？', 'error'); 
+
+                  $.each(data, function(index,pick){
+                res_str += '<div id="res_'+index+'" class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="" data-video-url="false" onclick="javascript:getInfo('+pick.animal_id+')">';
+                res_str += '<div href="#lb-gallery4-3t" data-slide-to="'+index+'" data-toggle="modal" >';
+                res_str += '<img alt="" width=180px height=180px src="'+pick.album_file+'" onerror="imgError('+index+');" >';
+                res_str += '<span class="icon-focus"></span>';
+                if (pick.animal_foundplace.length > 4)
+                {
+                  var tmp = '';
+                  pick.animal_foundplace = pick.animal_foundplace.split("", 3);
+                  if (pick.animal_foundplace[2] == '市' || pick.animal_foundplace[2] == '區' || pick.animal_foundplace[2] == '鎮' || pick.animal_foundplace[2] == '鄉' || pick.animal_foundplace[3] == '之')
+                  {
+                    for (var i = 0; i < pick.animal_foundplace.length; i++) {
+                      tmp += pick.animal_foundplace[i];
+                    }
+                    pick.animal_foundplace = tmp;
+                  }
+                  else
+                  {
+                      pick.animal_foundplace = '台灣的某地';
+                  }
+                }
+                else if (pick.animal_foundplace.length > 0 && pick.animal_foundplace.length < 4) {
+                  var tmp = "";
+                  for (var i = 0; i < pick.animal_foundplace.length; i++) {
+                    tmp += pick.animal_foundplace[i];
+                  }
+                  pick.animal_foundplace = tmp;
+                }
+                if (pick.animal_foundplace == "")
+                  pick.animal_foundplace = '台灣的某地';
+                res_str += '<span class="mbr-gallery-title" >'+pick.animal_kind+pick.animal_kind+'Found@'+pick.animal_foundplace+'</span></div></div>';
+                       
+                  });
+              
+              }
+              else {
+                // alert(img_err);
+                setTimeout(function(){
+                  res_count = res_count - img_err;
+                  swal(
+                        '搜尋完成',
+                        '總共為您尋到'+res_count+'隻浪浪',
+                        'success',
+                      )
+                }, 500);
+              }
 
               var home_btn = "";
               home_btn += '<section class="mbr-section article" id="msg-box3-3u" style="background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 40px;">';
