@@ -378,6 +378,24 @@
               var res_str = "";
               var ci_content = "";
               $.each(data, function(index,obj){
+                if (result.animal_bodytype == '') {
+                  
+                }
+                else if (obj.animal_bodytype != result.animal_bodytype) {
+                  return;
+                }
+                if (result.animal_colour == '') {
+                  
+                }
+                else if (obj.animal_colour != result.animal_colour) {
+                  return;
+                }
+                if (result.animal_age == '') {
+
+                }
+                else if (obj.animal_age != result.animal_age) {
+                  return;
+                }
                 // $('body').text(obj.animal_kind+obj.animal_sex);
                 res_str += '<div id="res_'+index+'" class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="" data-video-url="false" onclick="javascript:getInfo('+obj.animal_id+')">';
                 res_str += '<div href="#lb-gallery4-3t" data-slide-to="'+index+'" data-toggle="modal" >';
